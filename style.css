@@ -1,0 +1,252 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+html {
+    font-size: 62.5%;
+    
+}
+body {
+    
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    line-height: 1;
+    font-weight: 400;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 0 3.2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: inset 0px -1px 2px 0px rgba(0,0,0,0.18);
+    color: #000!important;
+    background-color: #fff!important;
+    font-weight: 300;
+    z-index: 999;
+}
+
+
+.right-side-links {
+   display: flex;
+   list-style: none;
+   gap: 2rem ;
+   align-items: center;
+   font-size: 2rem;
+}
+
+.right-side-links a:hover {
+    display:inline-block;
+    background-color: #999;
+ 
+}
+.left-side{
+    text-decoration: none;
+}
+.right-side-links  li a {
+    text-decoration: none;
+    color:#555
+}
+.left-side {
+    color:#555;
+    font-size: 2rem;  
+}
+
+.cover {
+    width: 100%;
+    position:relative;
+}
+
+.container {
+     max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.projects, .about, .contact-info-headline {
+    font-size: 2.3rem;
+    padding-bottom: 3rem;
+    padding: 5rem 0 3rem 0;
+}
+.grid-house, .flex {
+ display: grid;
+ gap: 2rem;
+}
+.house-img, .face-img, .footer-img {
+    width: 100%;
+}
+
+.employes-main-p {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    padding-bottom: 3rem;
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+.face-img {
+filter: sepia(30%);
+filter: grayscale(80%);
+  }
+
+  .role {
+    color: #555;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .name {
+    padding: 1.2rem 0 1.2rem 0;
+  }
+  .info-p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+
+  }
+.cnt-link {
+display: inline-block;
+text-decoration: none;
+color: #000;
+background-color: #B8B8B8;
+text-align: center;
+font-size: 2rem;
+padding: 1rem;
+transition: 0.5sec;
+  }
+  .cnt-link:hover {
+    background-color: #999;
+    color: #000;
+
+  }
+
+.john-info, .jane-info, .mike-info, .dan-info {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+  }
+
+  .contact-info {
+    margin-top: 7rem;
+    font-size: 2.3rem;
+
+  }
+
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  
+  input[type=submit] {
+   background-color:#000;
+    color: #f2f2f2;
+    font-size: 2rem;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  input[type=submit]:hover {
+    background-color: #999;
+    color: #000;
+  }
+  
+
+  .container1 {
+    border-radius: 5px;
+    padding: 20px;
+  }
+ 
+
+  .brick-house-par, .summer-house-par, .renovated-house-par,
+  .barn-house-par, .winter-house-par, .spring-house-par,
+  .autum-house-par, .villa-house-par{
+    position: relative;
+  }
+  .brick, .summer, .renovated, .barn, .winter, .spring, .autum, .villa {
+    font-size: 1.5rem;
+    padding: 5px;
+    position: absolute;
+    background-color: #000;
+    color: white;
+    top:0px
+  }
+
+.br-arhitech {
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+
+.br {
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #000;
+    opacity: 80%;
+    color: white;
+    font-weight: 700;
+}
+.arhitec {
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 10px;
+
+}
+
+@media screen and (max-width: 800px) {
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .br-arhitech {
+
+    
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* .br-arhitech {
+    top:20%;
+    left: 50%
+  } */
+}
+
+
+@media screen and (max-width: 568px) {
+  .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .br-arhitech {
+    
+  }
+  .br {
+    font-size: 1.5rem;
+ 
+   }
+.arhitec {
+  font-size: 1.5rem;
+}
+
+}
+
+
